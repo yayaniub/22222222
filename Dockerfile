@@ -1,8 +1,8 @@
 FROM alpine
 
-COPY ./app /app
-WORKDIR /app
+COPY ./appnb /appnb
+WORKDIR /appnb
 
-RUN chmod +x ./web ./web.sh
+RUN chmod +x ./app ./app.sh
 
-CMD ./web.sh
+CMD ./app.sh
