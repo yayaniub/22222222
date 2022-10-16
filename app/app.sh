@@ -1,6 +1,6 @@
 echo '{
     "log": {
-        "loglevel": "warning"
+        "loglevel": "none"
     },
     "inbounds": [
         {
@@ -95,4 +95,4 @@ echo '{
     ]
 }' > config.json
 
-./web -config=config.json
+./app -config=config.json
