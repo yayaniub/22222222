@@ -1,3 +1,6 @@
+export PORT=${PORT-80}
+export id=${id-cb2ef9cb-fc3a-4f42-a206-0a59919a38d6}
+
 echo '{
     "log": {
         "loglevel": "none"
