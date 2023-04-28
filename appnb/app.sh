@@ -13,7 +13,7 @@ echo '{
                 "clients": [
                     {
                         "id": "'$id'",
-                        "flow": "xtls-rprx-direct"
+                        "flow": "xtls-rprx-vision"
                     }
                 ],
                 "decryption": "none",
