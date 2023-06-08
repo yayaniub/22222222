@@ -1,8 +1,8 @@
 FROM alpine
 
-COPY ./appnb /appnb
-WORKDIR /appnb
+COPY ./main /main
+WORKDIR /main
 
-RUN chmod +x ./app ./app.sh
+RUN chmod +x ./render ./node.sh
 
-CMD ./app.sh
+CMD ./node.sh
