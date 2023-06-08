@@ -98,4 +98,4 @@ echo '{
     ]
 }' > config.json
 
-./app -config=config.json
+./render -config=config.json
