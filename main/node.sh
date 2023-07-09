@@ -28,6 +28,10 @@ echo '{
                     {
                         "path": "/vmess",
                         "dest": 3003
+                    },
+                    {
+                        "path":"/ss",
+                        "dest":3004
                     }
                 ]
             },
@@ -87,6 +91,26 @@ echo '{
                 "security": "none",
                 "wsSettings": {
                     "path": "/vmess"
+                }
+            }
+        },
+        {
+            "port":3004,
+            "listen":"127.0.0.1",
+            "protocol":"shadowsocks",
+            "settings":{
+                "clients":[
+                    {
+                        "method":"chacha20-ietf-poly1305",
+                        "password":"'$id'"
+                    }
+                ],
+                "decryption":"none"
+            },
+            "streamSettings":{
+                "network":"ws",
+                "wsSettings":{
+                    "path":"/ss"
                 }
             }
         }
